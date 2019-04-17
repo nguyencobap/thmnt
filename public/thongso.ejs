@@ -1,0 +1,122 @@
+<hr class="style18">
+<div class="row">
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <div> <p class="font-weight-bold">Nhiệt độ</p></div>
+    <div id="t1" class="pr">
+      <div id="t2" class="bof">
+        <div id="t3" class="brrr"></div>
+      </div>
+      <span>0</span>°C
+    </div>
+  </div>
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <table class="table table-condensed">
+      <tr>
+        <th>Ngày</th>
+        <td>
+          <div id="ngayt">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Min</th>
+        <td>
+          <div id="mint"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>Max</th>
+        <td>
+          <div id="maxt"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<hr class="style18">
+
+<div class="row">
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <div><p class="font-weight-bold">Độ ẩm</p></div>
+    <div id="humi1" class="pr">
+      <div id="humi2" class="bof">
+        <div id="humi3" class="brrr"></div>
+      </div>
+      <span>0</span>%
+    </div>
+  </div>
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <table class="table table-condensed">
+      <tr>
+        <th>Ngày</th>
+        <td>
+          <div id="ngayh">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Min</th>
+        <td>
+          <div id="minh"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>Max</th>
+        <td>
+          <div id="maxh"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<hr class="style18">
+
+
+<div class="row">
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <div><p class="font-weight-bold">Chất lượng không khí</p></div>
+    <div id="ppm1" class="pr">
+      <div id="ppm2" class="bof">
+        <div id="ppm3" class="brrr"></div>
+      </div>
+      <span>0</span> PPM
+    </div>
+  </div>
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <table class="table table-condensed">
+      <tr>
+        <th>Ngày</th>
+        <td>
+          <div id="ngayp">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Min</th>
+        <td>
+          <div id="minp"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>Max</th>
+        <td>
+          <div id="maxp"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<hr class="style18">
+<button type="button" class="btn btn-info btn-block" onclick="window.open('https://www.mlab.com/databases/heroku_k2jw0k2m/collections/ths')">Đến cơ sở dữ liệu</button>
+<button type="button" class="btn btn-info btn-block" onclick="window.location.href='/exporttocsv'">Xuất file Excel</button>
+<script type="text/javascript" src="sendcircle.js"></script>

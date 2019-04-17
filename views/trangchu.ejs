@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quản lý nhiệt độ và độ ẩm</title>
+	<link rel="shortcut icon" href="NtSoundcloud.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="jquery.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="menu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="declare.js"></script>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Sidebar Holder -->
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<h3>Điều hướng</h3>
+			</div>
+
+			<ul class="list-unstyled components">
+				<h4><p>Xin chào, <%= username %></p></h4>
+				<li id="thongso">
+					<a href="#">Thông Số</a>
+				</li>
+				<li id="thongke">
+					<a href="#">Đồ thị</a>
+				</li>
+				<li id="dieukhien">
+					<a href="#">Điều khiển</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Page Content Holder -->
+		<div id="content">
+			<div class="container-fluid">
+				<div class="text-center">
+					<img class="img-responsive text-center" src="logo-ngang.png" />
+				</div>
+				<hr></hr>
+				<div class="text-center">
+					<button class="btn btn-def btn-sm btn-block" data-toggle="collapse" data-target="#aboutUs">Về chúng tôi</button>
+					<div id="aboutUs" class="collapse">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h5><b>Đề tài IoT giám sát thông số môi trường</b></h5>
+								<h5><b>Giáo viên hướng dẫn: Thầy Bùi Văn Huy</b></h5>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h5><b>Nguyễn Hải Nguyên</b></h5>
+								<h5><b>Lê Duy Phong</b></h5>
+								<h5><b>Phạm Văn Công</b></h5>
+								<h5><b>Đinh Quang Nghĩa</b></h5>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<hr class="style18"/>
+
+			<nav class="navbar navbar-expand-sm navbar-light bg-dark sticky-top">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="navbar-header">
+								<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" >
+									<i class="glyphicon glyphicon-align-left"></i>
+									<span>Menu</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="col-xs-6">
+							<div class="navbar-right" id="myNavbar">
+								<button class ="btn btn-logout navbar-btn">
+									<a href="/logout"><span class="glyphicon glyphicon-log-out "></span> Đăng xuất</a>
+								</button>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</nav>
+
+			<div id="display" class="col-lg-10 col-lg-offset-1 col-xs-12">
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
