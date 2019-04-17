@@ -111,7 +111,7 @@ io.on("connection", function(socket) {
     if (!button.state) {
       light = {state: "false"};
     }
-    socket.emit('light', light);
+    // socket.emit('light', light);
     io.sockets.emit('light', light);
   });
 //   socket.on('toggle', function(state){
